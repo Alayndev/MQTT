@@ -12,6 +12,10 @@ This example shows how it works with WebSocket and the browser in order to emula
 
 As you can see, ws://test.mosquitto.org:8080/mqtt is the address of an MQTT broker that we can connect to using the WebSocket transport protocol because the mqtt.js library supports various transport protocols such as TCP, WebSocket, and Secure WebSocket. 
 
+Therefore, this example uses MQTT over WebSocket. When you connect to "ws://test.mosquitto.org:8080/mqtt", you are establishing a WebSocket connection to the server, and then using the MQTT protocol over that WebSocket connection to communicate with the MQTT broker.
+
+WebSocket is a transport protocol that allows two-way communication between a client and a server over a single, long-lived connection, while MQTT is a messaging protocol that defines the format and rules for exchanging messages between devices or applications. By using MQTT over WebSocket, you can leverage the benefits of both protocols: the low overhead and efficiency of MQTT, and the real-time, bi-directional communication of WebSocket.
+
 <br/>
 
 ## Getting Started
